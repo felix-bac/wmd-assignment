@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Inside the Black Box: How are A.I models Trained.</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./newsstyle.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    </head>
+
+    <body class="mt-1">
+      <div id="wrapper">
+        
+        <!-- Navigation Bar -->
+        <header> 
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top px-5" data-bs-theme="dark">
+            <div class="container-fluid">
+              <div class="logo">
+                <a class="navbar-brand" href="./index.html">
+                  <img src="./img/CyberAware_logo.png" alt="Logo" width="100em" height="60em" class="d-inline-block align-text-top">
+                </a>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel" ><a class="nav-link" href="./index.html">CyberAware</a></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav mx-auto flex-grow-0 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./security.html">Security</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./ai.html">AI</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <main>
+          <div class="main story">
+
+            <h2 class="headline">Inside the Black Box: How are A.I models Trained</h2>
+            <div class="abouandate">
+              <p>By Science and Technology Correspondent.</p>
+              <p>April 21, 2025</p>
+            </div>
+            <img src="./img/AI_model_training.jpeg" alt="Inside the Black Box: How are A.I models Trained" class="story-image">
+
+            <p>Artificial Intelligence (AI) models, from chatbots like Grok to image creators like DALL-E, are ubiquitous now, but training them is a mysterious and clandestine art. They need massive amounts of data, massive computing powers, and sophisticated algorithms to transform raw data into programs that can think, write, or recognize images. The more AI gets built, the more understanding how these models get trained unlocks the potential, the boundaries, and the inputs fueling the AI boom.</p>
+            
+            <p class="header1">The Start: Gathering Data</p>
+            
+            <p>There is data to AI training—massive data. For large language models (LLMs), this involves a fraction of books, web pages, social media, and research articles. Multimodal models, which accept text, images, and audio, require various data like image-caption pairs, videos, or audio transcripts. For example, OpenAI’s GPT-4 was trained on hundreds of terabytes of text data, equivalent to millions of books, while Meta’s LLaMA models leveraged publicly available datasets like Common Crawl, a web archive.</p>
+            
+            <p>Quality of data is important. Databases such as Wikipedia or scholarly articles provide good-quality, standardized data, but noisy data on untamed web pages can be prone to bias or errors. Companies such as DeepSeek, who presented the budget R1 model in 2025, are experts in preprocessing data—duplicates eliminated, inappropriate or objectionable material filtered out—to power model performance.</p>
+            
+            <p>There are privacy problems in data acquisition, especially since user-generated information, i.e., X or Reddit comments, is scraped illegitimately. In 2024, EU General Data Protection Regulation (GDPR) has more stringent measures, with business houses anonymizing information or taking permissions, albeit enforcement is stringent.</p>
+            
+            <p class="header1">Preprocessing and Tokenization</p>
+            
+            <p>Raw data, when collected, is preprocessed to prepare the data for usage. Text is tokenized—divided into smallest units like words or subwords—using techniques like Byte Pair Encoding (BPE). The word "running," for instance, may be tokenized as "run" and "##ing" to gain vocabulary reduction and efficiency. Images are resized and normalized, and audio is converted into spectrograms or waveforms.</p>
+            
+            <p>Preprocessing involves data cleaning for the removal of errors, i.e., typos or faulty files, and balancing datasets such that over-representation of certain groups or topics is not permitted. In 2024, a study published in Nature indicated that Western language-biased datasets cause model performance to be bad in non-English-speaking populations, and so an attempt was made towards corpora diversification for training.</p>
+            
+            <p class="header1">Model Architecture and Initialization</p>
+            
+            <p>The AI models, specifically deep neural networks, are constructed on transformers that drive most modern LLMs. A transformer is a chain of nodes that are connected and process input information, mathematics being used to learn patterns. GPT-4 architecture, for instance, is reported to consist of hundreds of billions of parameters—variables that are used to store learned information.</p>
+            
+            <p>Pre-training gives models random weights prior to training, preparing the ground for learning. Others, like DeepSeek, utilize pre-existing models (transfer learning) to gain an early advantage in training and therefore adapting them to a task. This approach, utilized in DeepSeek's R1, is cost- and time-effective, enabling the model to compete with ChatGPT giants on a budget of a few millions.</p>
+            
+            <p class="header1">Training: The Computational Marathon</p>
+            
+            <p>It is a very compute-intensive process that requires weeks or even months to train an AI model. It has two general steps: pretraining and fine-tuning.</p>
+            
+            <p>Pretraining: The model learns about general knowledge by making predictions on huge datasets. For LLMs, this would typically be predicting the next word in a sentence (autoregressive training) or masking words (masked language modeling). For image models, it could be object classification or captioning. Pretraining is also demanding in terms of hardware, e.g., NVIDIA H100 GPUs or Huawei Ascend chips, and is energy intensive—training one LLM can produce as much CO2 as a transatlantic flight, according to a 2023 MIT study.</p>
+            
+            <p>Fine-Tuning: After pretraining, models are refined for specific tasks, such as answering questions or generating code. Techniques like Reinforcement Learning from Human Feedback (RLHF) are used to align models with user expectations, reducing harmful or incorrect outputs. For example, xAI’s Grok 3 was fine-tuned with RLHF to improve conversational accuracy, while DeepSeek’s R1 used supervised fine-tuning for coding tasks.</p>
+            
+            <p>Training is also spread across hundreds of thousands of GPUs in data centers, on which Google and Microsoft have spent billions of dollars. The global market size for AI training was $20 billion as of 2024, driven by cloud computing and specialty chip demand.</p>
+
+            <p class="header1">Challenges and Innovations</p>
+            
+            <p>Training AI models is fraught with challenges. Computational costs are skyrocketing, with estimates suggesting that training a model like GPT-4 costs $100 million or more. Energy consumption is another concern, prompting companies to explore renewable-powered data centers. In 2025, DeepSeek’s use of Huawei’s Ascend chips achieved 82% hardware utilization, a breakthrough in cost-efficiency.</p>
+
+            <p>Bias and fairness are still an issue. Data-biased models can exacerbate stereotypes or discriminate, as with previous facial recognition software that was unable to properly recognize non-white faces. Adversarial debiasing and diversity of dataset construction are methods being researched to mitigate this, but with uneven steps.</p>
+            
+            <p>Innovations are accelerating training efficiency. Sparse models like Mixture of Experts (MoE), used in DeepSeek's R1, switch on only a fraction of the parameters, conserving computation demand. Quantization and pruning processes also make models efficient to the level that allows them to be executed on consumer-grade hardware.</p>
+
+            <p class="header1">The Human Factor</p>
+            
+            <p>Algorithms and hardware matter, but AI is trained on human effort. Data annotators, engineers, and annotators prepare data sets, build architecture, and test outputs. Annotators hired on low-cost terms tag data to label data for content moderation or sentiment analysis reasons, creating an ethical dimension in the workplace environment of the employees. Until 2024, one of the concerns underscored by the Bloomberg report is employing underpaid staff to train AI, as activists are asking for reforms.</p>
+
+            <p class="header1">The Future of Training AI</p>
+            
+            <p>As models become larger and more sophisticated, training is evolving. Federated learning, or training models on decentralized devices, is becoming increasingly popular for privacy-sensitive applications. Self-supervised learning, such as in Meta's LLaMA 3, reduces the requirement for labeled data, with synthetic data used to bridge gaps in real data.</p>
+
+            <p>Democratising training AI is also in process. Open-source tools such as Hugging Face's Transformers and MIT-licensed DeepSeek models are making it possible for smaller organizations to train competitive models. Innovation in algorithms and hardware has the potential to reduce the cost of training up to 50% by 2030, calculates McKinsey.</p>
+
+            <p>AI training is akin to instructing a child to reason but on an unprecedented scale," Stanford AI researcher Dr. Elena Martinez said. "The issue is in attempting to balance power, ethics, and accessibility."</p>
+
+            <p>As companies race to develop increasingly intelligent systems, the art and science of training AI will continue to be a deciding factor in the future, turning raw data into intelligence that powers everything from self-driving cars to medicine.</p>
+
+            <p>References: Nature; Bloomberg; MIT Technology Review; McKinsey; Hugging Face; International Data Corporation (IDC)</p>
+
+          </div>
+            
+            <div class="pagination">
+                <a href="./Deepseek.html" class="page-link">&laquo; Previous story</a>
+                <span class="separator">|</span>
+                <a href="./AI_takeover.html" class="page-link">Next story &raquo;</a>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt-5">
+            <div class="footer-container content-xl">
+              <div class="footer-grid">
+                <div class="footer-column">
+                  <div class="footer-logo">
+                    <a href="./index.html">
+                      <img src="./img/CyberAware_logo.png" alt="Logo" width="150">
+                    </a>
+                  </div>
+                  <h4 class="footer-heading">Follow Us:</h4>
+                  <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                      </svg></a>
+                    </li>
+                    <li><a href="https://x.com/"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                      <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                      </svg></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                     </svg></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                     <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                      </svg></i></a>
+                    </li>
+                  </ul>
+                </div>          
+    
+                <div class="footer-column">
+                  <h4 class="footer-heading">Quick Links:</h4>
+                  <ul class="footer-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./security.html">Security</a></li>
+                    <li><a href="./ai.html">AI</a></li>
+                    <li><a href="./feedback_page.html">Talk to us</a></li>
+                  </ul>
+                </div>
+    
+                <div class="footer-column">
+                  <h4 class="footer-heading">Contact</h4>
+                  <div class="contact-info">
+                    <p>Email: contact@cyberaware.com</p>
+                    <p>Phone: +267 300 000</p>
+                    <p>Address: Plot 123 Gaborone Botswana</p>
+                  </div>
+              </div>
+            </div>  
+    
+            <div class="footer-bottom">
+              <p> &copy; 2025 CyberAware. All Rights Reserved.</p>
+            </div>
+                        
+        </footer>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    </body>
+</html>        
